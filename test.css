@@ -2,12 +2,12 @@
 body {
     background-image: url("http://www.powerpointhintergrund.com/uploads/2017/05/heart-background-best-heart-background---24.gif");
 }
-h1 {
+h1, h3 {
     text-align: center;
 }
 
 img{
   position: absolute;
-  left: 700;
+  left: 670;
   top: 300;
 }
