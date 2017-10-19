@@ -1,25 +1,33 @@
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Example - example-filter-in-controller-production</title>
-  
+
 
   <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
   <script src="script.js"></script>
-  
 
-  
+
+
 </head>
 <body ng-app="FilterInControllerModule">
-  <div ng-controller="FilterController as ctrl">
-  <div>
-    All entries:
+<div ng-controller="FilterController as ctrl">
+
+  <div ng-controller="MyController">
+    Explicit version:
+    <input ng-model="greeting" type="text"><br>
+      
     <span ng-repeat="entry in ctrl.array">{{entry.name}} </span>
   </div>
+
   <div>
-    Entries that contain an "a":
+    Clean version:
     <span ng-repeat="entry in ctrl.filteredArray">{{entry.name}} </span>
   </div>
 </div>
+
+
+
 </body>
 </html>
